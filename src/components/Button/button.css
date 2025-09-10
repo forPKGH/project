@@ -1,0 +1,99 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs);
+  cursor: pointer;
+  font-size: var(--font-small);
+  gap: var(--space-xxs);
+  box-shadow: inset 0 1px 2px 0 var(--white-50), 0 0 10px 0 var(--glow-color);
+}
+
+.button--filled {
+  background-color: var(--white-5);
+  backdrop-filter: blur(var(--blur-size));
+}
+
+.button--transparent {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+}
+
+.button--icon-only {
+  justify-content: center;
+  align-items: center;
+}
+
+.button--text-only {
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-sm);
+  width: 100%;
+}
+
+.button--icon-top-no-bg {
+  flex-direction: column;
+  background: transparent;
+  min-width: var(--icon-sm);
+  min-height: var(--icon-sm);
+  aspect-ratio: 1/1;
+}
+
+.button--icon-top {
+  flex-direction: column;
+  aspect-ratio: 1/1;
+}
+
+.button--icon-right-large {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.button--icon-right-large .button__icon {
+  height: 100%;
+  width: var(--icon-lg);
+}
+
+.button--icon-right-large .button__text {
+  max-width: 100px;
+  text-align: left;
+}
+
+.button--icon-absolute {
+  width: var(--nav-btn-size);
+  height: var(--nav-btn-size);
+  flex-direction: row;
+}
+
+.button--icon-absolute .button__icon {
+  position: absolute;
+  width: var(--icon-md);
+  height: var(--icon-md);
+  top: 8px;
+  right: 8px;
+}
+
+.button--icon-absolute .button__text {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding-right: var(--space-xxs);
+  text-align: left;
+}
+
+.button__icon {
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+  line-height: 0;
+}
+
+.button__text {
+  line-height: 115%;
+}

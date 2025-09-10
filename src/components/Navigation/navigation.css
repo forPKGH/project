@@ -1,0 +1,24 @@
+.nav__list {
+  box-sizing: content-box;
+  padding: var(--space-sm);
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  bottom: var(--space-sm);
+  left: 0;
+  right: 0;
+  scrollbar-width: none;
+
+  pointer-events: none;
+}
+
+.nav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.nav__list>li {
+  pointer-events: auto;
+}
