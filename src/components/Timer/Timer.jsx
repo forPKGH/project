@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-import "../Timer/Timer.css"
+import "./Timer.css"
 
 const Timer = ({ onTimerComplete }) => {
   const [count, setCount] = useState(3);
