@@ -27,3 +27,18 @@
 .diaries-menu {
   padding-top: var(--space-md);
 }
+
+@media(max-width: 370px) {
+  .diaries-menu .button__icon {
+    display: none;
+  }
+
+  .diaries-menu .button {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .diaries-menu .button__text {
+    text-align: center;
+  }
+}

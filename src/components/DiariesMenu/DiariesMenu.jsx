@@ -20,7 +20,7 @@ const DiariesMenu = () => {
             <Link to="/diary">
               <Button text="Личный дневник" icon="/icons/diary.svg" variant="filled" layout="icon-right-large"></Button>
             </Link>
-            <Link to="/phones">
+            <Link to="/support-numbers">
               <Button text="Телефоны поддержки" icon="/icons/phone.svg" variant="filled" layout="icon-right-large"></Button>
             </Link>
           </div>

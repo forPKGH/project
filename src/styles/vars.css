@@ -1,10 +1,15 @@
 :root {
+  --dark-bg: linear-gradient(180deg, #0d0b17 0%, #080710 100%);
+  --light-bg: linear-gradient(180deg, #799ac0 0%, #c8d9ec 100%);
+
   --white: #F2F2F2;
   --black: #010101;
+  --black-90: #01010190;
   --white-50: #F2F2F250;
-  --white-5: #F2F2F208;
-  --glow-color: rgba(182, 173, 255, 0.4);
-  --glass-active: rgba(255, 255, 255, 0.3);
+  --white-80: #F2F2F280;
+  --white-5: #F2F2F200;
+  --white-30: #F2F2F230;
+  --glow-color: rgba(117, 107, 198, 0.3);
   --inset-shadow: rgba(0, 0, 0, 0.25);
 
   --space-xxs: 4px;
@@ -15,11 +20,13 @@
 
   --radius-sm: 10px;
 
-  --blur-size: 2px;
+  --blur-size: 4px;
 
-  --font-base: 16px;
-  --font-small: 14px;
-  --font-xs: 10px;
+  --font-xxxl: 64px;
+  --font-xl: 24px;
+  --font-lg: 16px;
+  --font-sm: 14px;
+  --font-xs: 12px;
 
   --icon-sm: 24px;
   --icon-md: 48px;

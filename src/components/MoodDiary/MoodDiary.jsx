@@ -83,7 +83,7 @@ const MoodDiary = () => {
   return (
     <div className="container">
       <div className="mood-diary">
-        {val === 0 && <span className="mood-diary__hint">Нажмите на смайлик, описывающий ваше настроение</span>}
+        {val === 0 && <span className="mood-diary__hint">Нажмите на смайлик, отражающий ваше настроение</span>}
         <Bar ref={chartRef} data={chartData} options={options} />
         <div className="mood-diary__x">
           {barCenters.map((x, idx) => (

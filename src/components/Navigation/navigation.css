@@ -11,8 +11,8 @@
   left: 0;
   right: 0;
   scrollbar-width: none;
-
   pointer-events: none;
+  scroll-behavior: smooth;
 }
 
 .nav__list::-webkit-scrollbar {

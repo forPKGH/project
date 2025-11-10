@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Settings from "../Settings/Settings";
+
 
 import "../Header/header.css"
 
@@ -18,17 +22,23 @@ const Header = () => {
     }
   };
 
+  const location = useLocation();
 
-  return (
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+  return (<>
+    <Settings isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
     <header className="header">
       <div className="container">
         <div className="header__inner">
-          <Button icon='../../../icons/user.svg' variant="filled" layout="icon" />
+          {location.pathname === "/" ? (<Link to="/Account"><Button icon='../../../icons/user.svg' variant="filled" layout="icon" /></Link>) : (<Link to="/"><Button icon='../../../icons/home.svg' variant="filled" layout="icon" /></Link>)}
+
           <h1>{getGreeting()}</h1>
-          <Button icon='../../../icons/settings.svg' variant="filled" layout="icon" />
+          <Button icon='../../../icons/settings.svg' variant="filled" layout="icon" onClick={() => setIsSettingsOpen(true)} />
         </div>
       </div>
-    </header>
+    </header >
+  </>
   )
 }
 

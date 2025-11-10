@@ -8,7 +8,6 @@ import DiariesMenu from "../components/DiariesMenu/DiariesMenu";
 
 const Home = () => {
   return (<>
-    <Header />
     <Appointment />
     <MoodDiary />
     <DiariesMenu />

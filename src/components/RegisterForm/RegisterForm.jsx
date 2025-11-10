@@ -1,6 +1,4 @@
 import { useState } from "react";
-import signUpWithProfile, { SignUpWithProfile } from "../../services/auth";
-import PopUp from "../PopUp/PopUp";
 
 const RegisterForm = () => {
   const [email, setEmail] = useState('');
@@ -9,7 +7,6 @@ const RegisterForm = () => {
   const [surname, setSurname] = useState('');
   const [patronymic, setPatronymic] = useState('');
   const [avatar, setAvatar] = useState(null);
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,22 +19,18 @@ const RegisterForm = () => {
     }
   }
 
-  const closePopUp = () => setErrorMessage('');
-
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Имя" value={name} onChange={e => setName(e.target.value)} />
-        <input type="text" placeholder="Фамилия" value={surname} onChange={e => setSurname(e.target.value)} />
-        <input type="text" placeholder="Отчество" value={patronymic} onChange={e => setPatronymic(e.target.value)} />
-        <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-        <input type="password" placeholder="Пароль" value={password} onChange={e => setPassword(e.target.value)} />
-        <input type="file" accept="image/*" onChange={e => setAvatar(e.target.files[0])} />
-        <button type="submit">Зарегистрироваться</button>
+    <div className="container">
+      <form className="account__form">
+        <input className="account__info account__info--avatar" type="file" />
+        <input className="account__info" type="text" placeholder="Имя" />
+        <input className="account__info" type="text" placeholder="Фамилия" />
+        <input className="account__info" type="text" placeholder="Отчество" />
+        <input className="account__info" type="email" placeholder="E-mail" />
+        <input className="account__info" type="password" placeholder="Пароль" />
+        <button type="submit" className="account__button">Зарегистрироваться</button>
       </form>
-
-      {errorMessage && <PopUp text={errorMessage} bgColor="#FF000060" onClose={closePopUp} />}
-    </>
+    </div>
   )
 }
 

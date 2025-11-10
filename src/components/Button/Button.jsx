@@ -2,7 +2,8 @@ import React from "react";
 import '../Button/button.css'
 
 const Button = (
-  { text,
+  { className,
+    text,
     icon,
     variant = 'filled',
     layout = 'text',
@@ -10,7 +11,7 @@ const Button = (
 ) => {
   return (
     <button
-      className={`button button--${variant} button--${layout}`}
+      className={`${className} button button--${variant} button--${layout}`}
       onClick={onClick}>
       {icon && <img src={icon} className='button__icon'></img>}
       {text && <span className='button__text'>{text}</span>}

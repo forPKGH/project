@@ -1,0 +1,22 @@
+.exercise-description__inner {
+  box-shadow: inset 0 1px 2px 0 var(--white-50), 0 0 10px 0 var(--glow-color);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  background-color: var(--white-5);
+  backdrop-filter: blur(var(--blur-size));
+  margin-bottom: var(--space-sm);
+}
+
+.exercise-description__title {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.exercise-description__description {
+  margin-bottom: var(--space-xs);
+  color: var(--white-80);
+}
+
+.exercise-description__instructions {
+  white-space: pre-line;
+}

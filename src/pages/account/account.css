@@ -1,0 +1,6 @@
+.account__save-button {
+  position: fixed;
+  z-index: 999;
+  right: var(--space-sm);
+  bottom: calc(var(--space-lg) + var(--nav-btn-size));
+}

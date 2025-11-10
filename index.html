@@ -5,12 +5,32 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#ffffff">
+
   <title>Vite + React</title>
 </head>
 
 <body>
   <div id="root"></div>
+  <script type="application/manifest+json" id="pwa-manifest">
+{
+  "name": "My PWA",
+  "short_name": "PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#42b883",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    { "src": "/pwa-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
+</script>
   <script type="module" src="/src/main.jsx"></script>
+
 </body>
 
 </html>
