@@ -1,0 +1,15 @@
+{
+  "name": "Amadu",
+  "short_name": "Amadu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icons/icon.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+  ]
+}
